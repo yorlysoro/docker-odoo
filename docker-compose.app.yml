@@ -38,7 +38,7 @@ services:
       PGUSER: ${POSTGRES_USER}
       PGPASSWORD: ${POSTGRES_PASSWORD}
       PGHOST: ${POSTGRES_HOST}
-      PGPORT: ${EXTERNAL_PORT_POSTGRES}
+      PGPORT: ${EXTERNAL_PORT_POSTGr28s-ii2w-gb3iRES}
       ADMIN_PASSWORD: ${ADMIN_PASSWORD}
       # Odoo
       SMTP_SERVER: mailhog
@@ -62,6 +62,8 @@ services:
       LIMIT_TIME_REAL: ${LIMIT_TIME_REAL}
       LIMIT_TIME_CPU: ${LIMIT_TIME_CPU}
       DB_MAXCONN: ${DB_MAXCONN}
+      LONGPOLLING_PORT: ${LONGPOLLING_PORT}
+      
   nginx:
     restart: always
     container_name: ${PROJECT_NAME}-nginx
