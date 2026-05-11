@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Formularios: Extendemos el original -->
+    <record id="view_product_template_form_inherit_priority" model="ir.ui.view">
+        <field name="name">product.template.form.inherit.priority</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='inventory']" position="inside">
+                <group string="Replenishment Priority" name="replenishment_priority_group">
+                    <field name="replenishment_priority" widget="priority"/>
+                    <field name="target_stock"/>
+                    <field name="needs_replenishment" invisible="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Nueva vista de Lista agrupada -->
+    <record id="view_product_template_list_priority" model="ir.ui.view">
+        <field name="name">product.template.list.priority</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <list string="Pending Replenishments" decoration-danger="replenishment_priority == 'high'" decoration-warning="replenishment_priority == 'medium'">
+                <field name="name"/>
+                <field name="replenishment_priority" widget="badge" 
+                       decoration-danger="replenishment_priority == 'high'"
+                       decoration-warning="replenishment_priority == 'medium'"
+                       decoration-info="replenishment_priority == 'low'"/>
+                <field name="qty_available"/>
+                <field name="target_stock"/>
+                <field name="uom_id"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Acción de Ventana -->
+    <record id="action_pending_replenishments" model="ir.actions.act_window">
+        <field name="name">Pending Replenishments</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_id" ref="view_product_template_list_priority"/>
+        <field name="domain">[('needs_replenishment', '=', True)]</field>
+        <field name="context">{'search_default_groupby_replenishment_priority': 1}</field>
+    </record>
+
+    <!-- Menú -->
+    <menuitem id="menu_stock_priority" 
+              name="Priority Replenishments" 
+              parent="stock.menu_stock_warehouse_mgmt" 
+              action="action_pending_replenishments" 
+              sequence="15"/>
+</odoo>
