@@ -10,9 +10,10 @@ class TestStockPriority(TransactionCase):
         super(TestStockPriority, cls).setUpClass()
         cls.product = cls.env['product.template'].create({
             'name': 'Test CPU',
-            'type': 'product',
+            'type': 'consu',
             'replenishment_priority': 'high',
             'target_stock': 50.0,
+            'is_storable': True,
         })
         # Simulate inventory level
         cls.env['stock.quant']._update_available_quantity(cls.product.product_variant_id, cls.env.ref('stock.stock_location_stock'), 10.0)

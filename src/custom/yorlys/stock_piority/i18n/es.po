@@ -1,46 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_piority
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 18.0-20260509\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 12:00+0000\n"
-"PO-Revision-Date: 2026-05-11 12:00+0000\n"
-"Language-Team: Spanish\n"
+"POT-Creation-Date: 2026-05-11 23:28+0000\n"
+"PO-Revision-Date: 2026-05-11 23:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
 
-#. module: stock_priority
-#: model:ir.model.fields,field_description:stock_priority.field_product_template__replenishment_priority
-msgid "Replenishment Priority"
-msgstr "Prioridad de Reabastecimiento"
+#. module: stock_piority
+#: model:ir.model.fields,help:stock_piority.field_product_product__replenishment_priority
+#: model:ir.model.fields,help:stock_piority.field_product_template__replenishment_priority
+msgid "Defines the operational criticality for restocking this product."
+msgstr "Define la criticidad operativa para el reabastecimiento de este producto."
 
-#. module: stock_priority
-#: model:ir.model.fields.selection,name:stock_priority.selection__product_template__replenishment_priority__low
-msgid "Low"
-msgstr "Baja"
-
-#. module: stock_priority
-#: model:ir.model.fields.selection,name:stock_priority.selection__product_template__replenishment_priority__medium
-msgid "Medium"
-msgstr "Media"
-
-#. module: stock_priority
-#: model:ir.model.fields.selection,name:stock_priority.selection__product_template__replenishment_priority__high
+#. module: stock_piority
+#: model:ir.model.fields.selection,name:stock_piority.selection__product_template__replenishment_priority__high
 msgid "High"
 msgstr "Alta"
 
-#. module: stock_priority
-#: model:ir.model.fields,field_description:stock_priority.field_product_template__target_stock
-msgid "Target Stock"
-msgstr "Stock Objetivo"
+#. module: stock_piority
+#: model:ir.model.fields,help:stock_piority.field_product_product__target_stock
+#: model:ir.model.fields,help:stock_piority.field_product_template__target_stock
+msgid ""
+"If available quantity falls below this threshold, an activity is triggered."
+msgstr "Si la cantidad disponible cae por debajo de este umbral, se desencadena una actividad."
 
-#. module: stock_priority
-#: model:ir.model.fields,field_description:stock_priority.field_product_template__needs_replenishment
+#. module: stock_piority
+#: model:ir.actions.server,name:stock_piority.ir_cron_evaluate_replenishment_ir_actions_server
+msgid "Inventory: Evaluate Stock Priorities"
+msgstr "Inventario: Evaluar Prioridades de Stock"
+
+#. module: stock_piority
+#: model:ir.model.fields.selection,name:stock_piority.selection__product_template__replenishment_priority__low
+msgid "Low"
+msgstr "Baja"
+
+#. module: stock_piority
+#: model:ir.model.fields.selection,name:stock_piority.selection__product_template__replenishment_priority__medium
+msgid "Medium"
+msgstr "Media"
+
+#. module: stock_piority
+#: model:ir.model.fields,field_description:stock_piority.field_product_product__needs_replenishment
+#: model:ir.model.fields,field_description:stock_piority.field_product_template__needs_replenishment
 msgid "Needs Replenishment"
 msgstr "Necesita Reabastecimiento"
 
-#. module: stock_priority
-#: model:ir.actions.act_window,name:stock_priority.action_pending_replenishments
-#: model:ir.ui.menu,name:stock_priority.menu_stock_priority
-msgid "Priority Replenishments"
+#. module: stock_piority
+#: model:ir.actions.act_window,name:stock_piority.action_pending_replenishments
+#: model_terms:ir.ui.view,arch_db:stock_piority.view_product_template_list_priority
+msgid "Pending Replenishments"
 msgstr "Reabastecimientos Pendientes"
+
+#. module: stock_piority
+#: model:ir.ui.menu,name:stock_piority.menu_stock_priority
+msgid "Priority Replenishments"
+msgstr "Reabastecimientos Prioritarios"
+
+#. module: stock_piority
+#: model:ir.model,name:stock_piority.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: stock_piority
+#: model:ir.model.fields,field_description:stock_piority.field_product_product__replenishment_priority
+#: model:ir.model.fields,field_description:stock_piority.field_product_template__replenishment_priority
+#: model_terms:ir.ui.view,arch_db:stock_piority.view_product_template_form_inherit_priority
+msgid "Replenishment Priority"
+msgstr "Prioridad de Reabastecimiento"
+
+#. module: stock_piority
+#: model:ir.model.fields,field_description:stock_piority.field_product_product__target_stock
+#: model:ir.model.fields,field_description:stock_piority.field_product_template__target_stock
+msgid "Target Stock"
+msgstr "Stock Objetivo"
+
+#. module: stock_piority
+#: model:ir.model.fields,help:stock_piority.field_product_product__needs_replenishment
+#: model:ir.model.fields,help:stock_piority.field_product_template__needs_replenishment
+msgid "Technical field updated by cron to optimize list views."
+msgstr "Campo técnico actualizado por cron para optimizar las vistas de lista."

@@ -35,7 +35,7 @@ class ProductTemplate(models.Model):
         """
         # Fetch only products that actually have a target stock to optimize memory
         products = self.search([
-            ('type', '=', 'product'), 
+            ('type', '=', 'consu'), 
             ('target_stock', '>', 0)
         ])
         
