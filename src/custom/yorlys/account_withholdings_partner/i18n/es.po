@@ -1,0 +1,202 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_withholdings_partner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260509\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 12:39+0000\n"
+"PO-Revision-Date: 2026-05-12 12:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_withholding_rule_form
+msgid "Applied Withholdings"
+msgstr "Retenciones Aplicadas"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_fiscal_profile_form
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_withholding_rule_form
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: account_withholdings_partner
+#: model:ir.model,name:account_withholdings_partner.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.actions.act_window,help:account_withholdings_partner.action_account_fiscal_profile
+msgid "Create your first Fiscal Profile!"
+msgstr "¡Crea tu primer Perfil Fiscal!"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__create_uid
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__create_date
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.actions.act_window,help:account_withholdings_partner.action_account_withholding_rule
+msgid "Define your first Withholding Rule!"
+msgstr "¡Define tu primera Regla de Retención!"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__description
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_fiscal_profile_form
+msgid "Description"
+msgstr "Descripción"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,help:account_withholdings_partner.field_res_partner__fiscal_profile_id
+#: model:ir.model.fields,help:account_withholdings_partner.field_res_users__fiscal_profile_id
+msgid "Determines the automatic withholdings applied to this partner."
+msgstr "Determina las retenciones automáticas aplicadas a este partner."
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__display_name
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: account_withholdings_partner
+#: model:ir.model,name:account_withholdings_partner.model_account_fiscal_profile
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__profile_id
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_res_partner__fiscal_profile_id
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_res_users__fiscal_profile_id
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_fiscal_profile_form
+msgid "Fiscal Profile"
+msgstr "Perfil Fiscal"
+
+#. module: account_withholdings_partner
+#: model:ir.actions.act_window,name:account_withholdings_partner.action_account_fiscal_profile
+#: model:ir.ui.menu,name:account_withholdings_partner.menu_account_fiscal_profile
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_fiscal_profile_tree
+msgid "Fiscal Profiles"
+msgstr "Perfiles Fiscales"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.actions.act_window,help:account_withholdings_partner.action_account_fiscal_profile
+msgid ""
+"Fiscal profiles allow you to categorize partners (customers/vendors) \n"
+"                to automatically apply withholding taxes during invoice validation."
+msgstr "Los perfiles fiscales le permiten categorizar socios (clientes/proveedores) para aplicar automáticamente impuestos de retención durante la validación de facturas."
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__id
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_fiscal_profile_form
+msgid "Internal notes or legal references regarding this profile..."
+msgstr "Notas internas o referencias legales sobre este perfil..."
+
+#. module: account_withholdings_partner
+#: model:ir.model,name:account_withholdings_partner.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__write_uid
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__write_date
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__write_date
+msgid "Last Updated on"
+msgstr "Última actualización El"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.actions.act_window,help:account_withholdings_partner.action_account_withholding_rule
+msgid ""
+"Map a Fiscal Profile to specific negative taxes (withholdings) \n"
+"                for a particular company."
+msgstr "Mapear un Perfil Fiscal a impuestos negativos (retenciones) específicos para una compañía en particular."
+
+#. module: account_withholdings_partner
+#: model:ir.model.constraint,message:account_withholdings_partner.constraint_account_withholding_rule_profile_company_uniq
+msgid "Only one rule per profile and company is allowed!"
+msgstr "¡Solo se permite una regla por perfil y compañía!"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_fiscal_profile__name
+msgid "Profile Name"
+msgstr "Nombre del Perfil"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_withholding_rule_form
+msgid "Profile Rule for"
+msgstr "Regla de Perfil para"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_withholding_rule_form
+msgid "Select a fiscal profile..."
+msgstr "Seleccionar un perfil fiscal..."
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,help:account_withholdings_partner.field_account_withholding_rule__tax_ids
+msgid "Taxes that will be automatically applied to the invoice lines."
+msgstr "Impuestos que se aplicarán automáticamente a las líneas de factura."
+
+#. module: account_withholdings_partner
+#. odoo-python
+#: code:addons/account_withholdings_partner/models/account_move.py:0
+msgid ""
+"The partner %(partner)s has a fiscal profile '%(profile)s' but there is no "
+"withholding rule configured for company %(company)s."
+msgstr ""
+"El contacto %(partner)s tiene el perfil fiscal '%(profile)s' pero no existe "
+"una regla de retención configurada para la compañía %(company)s."
+
+#. module: account_withholdings_partner
+#: model:ir.model,name:account_withholdings_partner.model_account_withholding_rule
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_withholding_rule_form
+msgid "Withholding Rule"
+msgstr "Regla de Retención"
+
+#. module: account_withholdings_partner
+#: model:ir.actions.act_window,name:account_withholdings_partner.action_account_withholding_rule
+#: model:ir.ui.menu,name:account_withholdings_partner.menu_account_withholding_rule
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_withholding_rule_tree
+msgid "Withholding Rules"
+msgstr "Reglas de Retención"
+
+#. module: account_withholdings_partner
+#: model:ir.model.fields,field_description:account_withholdings_partner.field_account_withholding_rule__tax_ids
+msgid "Withholding Taxes"
+msgstr "Impuestos de Retención"
+
+#. module: account_withholdings_partner
+#: model_terms:ir.ui.view,arch_db:account_withholdings_partner.view_account_fiscal_profile_form
+msgid "e.g. Special Taxpayer"
+msgstr "Ej. Contribuyente Especial"
