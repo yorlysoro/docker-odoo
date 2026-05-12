@@ -1,0 +1,135 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_tags_dynamic
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260509\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 14:32+0000\n"
+"PO-Revision-Date: 2026-05-12 14:32+0000\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__color
+msgid "Color Index"
+msgstr "Índice de Color"
+
+#. module: product_tags_dynamic
+#: model_terms:ir.actions.act_window,help:product_tags_dynamic.action_stock_operation_tag
+msgid "Create your first operational tag!"
+msgstr "¡Crea tu primera etiqueta operativa!"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields.selection,name:product_tags_dynamic.selection__stock_operation_tag__operation_type__delivery
+msgid "Delivery"
+msgstr "Entrega"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__display_name
+msgid "Display Name"
+msgstr "Nombre Mostrado"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__id
+msgid "ID"
+msgstr "ID"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields.selection,name:product_tags_dynamic.selection__stock_operation_tag__operation_type__internal
+msgid "Internal Transfer"
+msgstr "Transferencia Interna"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields.selection,name:product_tags_dynamic.selection__stock_operation_tag__operation_type__mrp
+msgid "Manufacturing"
+msgstr "Fabricación"
+
+#. module: product_tags_dynamic
+#: model:ir.actions.server,name:product_tags_dynamic.action_assign_tags_multi
+msgid "Mass Assign Operation Tags"
+msgstr "Asignación Masiva de Etiquetas Operativas"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: product_tags_dynamic
+#: model_terms:ir.ui.view,arch_db:product_tags_dynamic.view_stock_operation_tag_form
+msgid "Operation Tag"
+msgstr "Etiqueta Operativa"
+
+#. module: product_tags_dynamic
+#: model:ir.actions.act_window,name:product_tags_dynamic.action_stock_operation_tag
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_product_product__stock_operation_tag_ids
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_product_template__stock_operation_tag_ids
+#: model:ir.ui.menu,name:product_tags_dynamic.menu_stock_operation_tag
+#: model_terms:ir.ui.view,arch_db:product_tags_dynamic.view_stock_operation_tag_list
+msgid "Operation Tags"
+msgstr "Etiquetas Operativas"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__operation_type
+msgid "Operation Type"
+msgstr "Tipo de Operación"
+
+#. module: product_tags_dynamic
+#: model:ir.model,name:product_tags_dynamic.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,field_description:product_tags_dynamic.field_stock_operation_tag__product_tmpl_ids
+msgid "Products"
+msgstr "Productos"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields.selection,name:product_tags_dynamic.selection__stock_operation_tag__operation_type__receipt
+msgid "Receipt"
+msgstr "Recepción"
+
+#. module: product_tags_dynamic
+#: model:ir.model,name:product_tags_dynamic.model_stock_operation_tag
+msgid "Stock Operation Tag"
+msgstr "Etiqueta de Operación de Stock"
+
+#. module: product_tags_dynamic
+#: model:ir.model.fields,help:product_tags_dynamic.field_product_product__stock_operation_tag_ids
+#: model:ir.model.fields,help:product_tags_dynamic.field_product_template__stock_operation_tag_ids
+msgid "Tags used for warehouse routing and picking priority"
+msgstr "Etiquetas utilizadas para el enrutamiento en almacén y prioridad de recolección (picking)"
+
+#. module: product_tags_dynamic
+#: model_terms:ir.ui.view,arch_db:product_tags_dynamic.view_stock_operation_tag_form
+msgid "e.g. Fragile, Cold Chain..."
+msgstr "ej. Frágil, Cadena de Frío..."
