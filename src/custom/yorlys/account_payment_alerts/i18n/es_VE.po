@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_payment_alerts
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20260509\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-12 17:22+0000\n"
+"PO-Revision-Date: 2026-05-12 17:22+0000\n"
+"Language-Team: Spanish (Venezuela)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: account_payment_alerts
+#: model:ir.actions.server,name:account_payment_alerts.ir_cron_evaluate_collection_risk_ir_actions_server
+msgid "Account: Evaluate Collection Risks"
+msgstr "Contabilidad: Evaluar Riesgos de Cobranza"
+
+#. module: account_payment_alerts
+#: model:ir.model,name:account_payment_alerts.model_account_collection_alert_rule
+msgid "Collection Alert Rule"
+msgstr "Regla de Alerta de Cobranza"
+
+#. module: account_payment_alerts
+#: model:ir.actions.act_window,name:account_payment_alerts.action_account_collection_alert_rule
+#: model:ir.ui.menu,name:account_payment_alerts.menu_account_collection_alert_rule
+#: model_terms:ir.ui.view,arch_db:account_payment_alerts.view_account_collection_alert_rule_list
+msgid "Collection Rules"
+msgstr "Reglas de Cobranza"
+
+#. module: account_payment_alerts
+#: model_terms:ir.ui.view,arch_db:account_payment_alerts.view_account_collection_alert_rule_form
+msgid "Collection Rule"
+msgstr "Regla de Cobranza"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__days_overdue
+msgid "Days Overdue"
+msgstr "Días de Atraso"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__display_name
+msgid "Display Name"
+msgstr "Nombre Mostrado"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields.selection,name:account_payment_alerts.selection__account_collection_alert_rule__risk_level__high
+msgid "High"
+msgstr "Alto"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_payment_alerts
+#: model:ir.model,name:account_payment_alerts.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento Contable"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización el"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields.selection,name:account_payment_alerts.selection__account_collection_alert_rule__risk_level__low
+msgid "Low"
+msgstr "Bajo"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields.selection,name:account_payment_alerts.selection__account_collection_alert_rule__risk_level__medium
+msgid "Medium"
+msgstr "Medio"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__amount_min
+msgid "Minimum Amount"
+msgstr "Monto Mínimo"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,help:account_payment_alerts.field_account_collection_alert_rule__days_overdue
+msgid "Minimum days after the due date to trigger this rule."
+msgstr "Días mínimos de atraso desde la fecha de vencimiento para activar esta regla."
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,help:account_payment_alerts.field_account_collection_alert_rule__amount_min
+msgid "Minimum residual amount to trigger this rule."
+msgstr "Monto residual mínimo para activar esta regla."
+
+#. module: account_payment_alerts
+#: model_terms:ir.actions.act_window,help:account_payment_alerts.action_collection_alerts_dashboard
+msgid "No overdue invoices at risk found! Great job!"
+msgstr "¡No se encontraron facturas vencidas en riesgo! ¡Buen trabajo!"
+
+#. module: account_payment_alerts
+#: model:ir.ui.menu,name:account_payment_alerts.menu_collection_alerts_dashboard
+msgid "Payment Alerts"
+msgstr "Alertas de Cobranza"
+
+#. module: account_payment_alerts
+#: model:ir.actions.act_window,name:account_payment_alerts.action_collection_alerts_dashboard
+msgid "Payment Alerts Dashboard"
+msgstr "Tablero de Alertas de Cobranza"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_bank_statement_line__risk_level
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__risk_level
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_move__risk_level
+msgid "Risk Level"
+msgstr "Nivel de Riesgo"
+
+#. module: account_payment_alerts
+#: model:ir.model.fields,field_description:account_payment_alerts.field_account_collection_alert_rule__name
+msgid "Rule Name"
+msgstr "Nombre de la Regla"
+
+#. module: account_payment_alerts
+#: model_terms:ir.ui.view,arch_db:account_payment_alerts.view_account_collection_alert_rule_form
+msgid "e.g. High Risk > 30 Days"
+msgstr "ej. Riesgo Alto > 30 Días"

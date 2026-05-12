@@ -1,6 +1,11 @@
 .env
-src
 .resources/Dockerfile
 .resources/dbconfigs/pg_hba.conf
 **/.vscode/
 venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.cache
+.pytest_cache/

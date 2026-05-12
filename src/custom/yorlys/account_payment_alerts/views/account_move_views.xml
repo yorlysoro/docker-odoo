@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Custom Kanban Dashboard for Collection Alerts -->
+    <record id="view_account_move_collection_dashboard" model="ir.ui.view">
+        <field name="name">account.move.collection.dashboard</field>
+        <field name="model">account.move</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="risk_level" create="false" class="o_kanban_dashboard">
+                <templates>
+                    <t t-name="card">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_record_headings">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="name"/>
+                                    </strong>
+                                    <br/>
+                                    <small><field name="partner_id"/></small>
+                                </div>
+                                <div class="o_kanban_record_top_right">
+                                    <field name="state" widget="label_selection" options="{'classes': {'draft': 'default', 'posted': 'success'}}"/>
+                                </div>
+                            </div>
+                            <div class="o_kanban_record_bottom mt-2">
+                                <div class="oe_kanban_bottom_left">
+                                    <field name="invoice_date_due" widget="remaining_days"/>
+                                </div>
+                                <div class="oe_kanban_bottom_right">
+                                    <strong><field name="amount_residual"/></strong>
+                                    <field name="currency_id" invisible="1"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Action for the Dashboard -->
+    <record id="action_collection_alerts_dashboard" model="ir.actions.act_window">
+        <field name="name">Payment Alerts Dashboard</field>
+        <field name="res_model">account.move</field>
+        <field name="view_mode">kanban,list,form</field>
+        <!-- Only show invoices that actually have a risk level assigned -->
+        <field name="domain">[('risk_level', '!=', False)]</field>
+        <field name="view_id" ref="view_account_move_collection_dashboard"/>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            No overdue invoices at risk found! Great job!
+          </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_collection_alerts_dashboard" 
+              name="Payment Alerts" 
+              parent="account.menu_finance_configuration" 
+              action="action_collection_alerts_dashboard" 
+              sequence="20"/>
+</odoo>
